@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CDFDF4241D0E2DEC007316F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFDF4231D0E2DEC007316F6 /* AppDelegate.swift */; };
+		CDFDF4261D0E2DEC007316F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFDF4251D0E2DEC007316F6 /* ViewController.swift */; };
+		CDFDF4291D0E2DEC007316F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDFDF4271D0E2DEC007316F6 /* Main.storyboard */; };
+		CDFDF42B1D0E2DEC007316F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDFDF42A1D0E2DEC007316F6 /* Assets.xcassets */; };
+		CDFDF42E1D0E2DEC007316F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDFDF42C1D0E2DEC007316F6 /* LaunchScreen.storyboard */; };
+		CDFDF4391D0E2DEC007316F6 /* MediaPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFDF4381D0E2DEC007316F6 /* MediaPlayerTests.swift */; };
+		CDFDF4441D0E2DEC007316F6 /* MediaPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFDF4431D0E2DEC007316F6 /* MediaPlayerUITests.swift */; };
+		CDFDF4521D0E2E1E007316F6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFDF4511D0E2E1E007316F6 /* AVFoundation.framework */; };
+		CDFDF4541D0E2F1F007316F6 /* Egoist in Resources */ = {isa = PBXBuildFile; fileRef = CDFDF4531D0E2F1F007316F6 /* Egoist */; };
+		CDFDF4561D0E30CF007316F6 /* MediaPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFDF4551D0E30CF007316F6 /* MediaPlayerViewController.swift */; };
+		CDFDF45A1D0E3183007316F6 /* EGOIST_Album-cover-art-650x645.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDFDF4591D0E3183007316F6 /* EGOIST_Album-cover-art-650x645.jpg */; };
+		CDFDF4601D0E4C94007316F6 /* EGOIST - 名前のない怪物.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDFDF45B1D0E4C94007316F6 /* EGOIST - 名前のない怪物.mp3 */; };
+		CDFDF4611D0E4C94007316F6 /* EGOIST - 想いを巡らす100の事象.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDFDF45C1D0E4C94007316F6 /* EGOIST - 想いを巡らす100の事象.mp3 */; };
+		CDFDF4621D0E4C94007316F6 /* EGOIST - All Alone With You.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDFDF45D1D0E4C94007316F6 /* EGOIST - All Alone With You.mp3 */; };
+		CDFDF4631D0E4C94007316F6 /* EGOIST - Departures〜あなたにおくるアイの歌〜.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDFDF45E1D0E4C94007316F6 /* EGOIST - Departures〜あなたにおくるアイの歌〜.mp3 */; };
+		CDFDF4641D0E4C94007316F6 /* EGOIST - Euterpe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDFDF45F1D0E4C94007316F6 /* EGOIST - Euterpe.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CDFDF4351D0E2DEC007316F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDFDF4181D0E2DEC007316F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDFDF41F1D0E2DEC007316F6;
+			remoteInfo = MediaPlayer;
+		};
+		CDFDF4401D0E2DEC007316F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDFDF4181D0E2DEC007316F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDFDF41F1D0E2DEC007316F6;
+			remoteInfo = MediaPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CDFDF4201D0E2DEC007316F6 /* MediaPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDFDF4231D0E2DEC007316F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CDFDF4251D0E2DEC007316F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CDFDF4281D0E2DEC007316F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CDFDF42A1D0E2DEC007316F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CDFDF42D1D0E2DEC007316F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CDFDF42F1D0E2DEC007316F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDFDF4341D0E2DEC007316F6 /* MediaPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediaPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDFDF4381D0E2DEC007316F6 /* MediaPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPlayerTests.swift; sourceTree = "<group>"; };
+		CDFDF43A1D0E2DEC007316F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDFDF43F1D0E2DEC007316F6 /* MediaPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediaPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDFDF4431D0E2DEC007316F6 /* MediaPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPlayerUITests.swift; sourceTree = "<group>"; };
+		CDFDF4451D0E2DEC007316F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDFDF4511D0E2E1E007316F6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CDFDF4531D0E2F1F007316F6 /* Egoist */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Egoist; sourceTree = "<group>"; };
+		CDFDF4551D0E30CF007316F6 /* MediaPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPlayerViewController.swift; sourceTree = "<group>"; };
+		CDFDF4591D0E3183007316F6 /* EGOIST_Album-cover-art-650x645.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "EGOIST_Album-cover-art-650x645.jpg"; sourceTree = "<group>"; };
+		CDFDF45B1D0E4C94007316F6 /* EGOIST - 名前のない怪物.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "EGOIST - 名前のない怪物.mp3"; path = "Egoist/EGOIST - 名前のない怪物.mp3"; sourceTree = "<group>"; };
+		CDFDF45C1D0E4C94007316F6 /* EGOIST - 想いを巡らす100の事象.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "EGOIST - 想いを巡らす100の事象.mp3"; path = "Egoist/EGOIST - 想いを巡らす100の事象.mp3"; sourceTree = "<group>"; };
+		CDFDF45D1D0E4C94007316F6 /* EGOIST - All Alone With You.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "EGOIST - All Alone With You.mp3"; path = "Egoist/EGOIST - All Alone With You.mp3"; sourceTree = "<group>"; };
+		CDFDF45E1D0E4C94007316F6 /* EGOIST - Departures〜あなたにおくるアイの歌〜.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "EGOIST - Departures〜あなたにおくるアイの歌〜.mp3"; path = "Egoist/EGOIST - Departures〜あなたにおくるアイの歌〜.mp3"; sourceTree = "<group>"; };
+		CDFDF45F1D0E4C94007316F6 /* EGOIST - Euterpe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "EGOIST - Euterpe.mp3"; path = "Egoist/EGOIST - Euterpe.mp3"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDFDF41D1D0E2DEC007316F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDFDF4521D0E2E1E007316F6 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDFDF4311D0E2DEC007316F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDFDF43C1D0E2DEC007316F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CDFDF4171D0E2DEC007316F6 = {
+			isa = PBXGroup;
+			children = (
+				CDFDF4511D0E2E1E007316F6 /* AVFoundation.framework */,
+				CDFDF4221D0E2DEC007316F6 /* MediaPlayer */,
+				CDFDF4371D0E2DEC007316F6 /* MediaPlayerTests */,
+				CDFDF4421D0E2DEC007316F6 /* MediaPlayerUITests */,
+				CDFDF4211D0E2DEC007316F6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CDFDF4211D0E2DEC007316F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDFDF4201D0E2DEC007316F6 /* MediaPlayer.app */,
+				CDFDF4341D0E2DEC007316F6 /* MediaPlayerTests.xctest */,
+				CDFDF43F1D0E2DEC007316F6 /* MediaPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDFDF4221D0E2DEC007316F6 /* MediaPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				CDFDF4231D0E2DEC007316F6 /* AppDelegate.swift */,
+				CDFDF4251D0E2DEC007316F6 /* ViewController.swift */,
+				CDFDF4551D0E30CF007316F6 /* MediaPlayerViewController.swift */,
+				CDFDF4271D0E2DEC007316F6 /* Main.storyboard */,
+				CDFDF45B1D0E4C94007316F6 /* EGOIST - 名前のない怪物.mp3 */,
+				CDFDF45C1D0E4C94007316F6 /* EGOIST - 想いを巡らす100の事象.mp3 */,
+				CDFDF45D1D0E4C94007316F6 /* EGOIST - All Alone With You.mp3 */,
+				CDFDF45E1D0E4C94007316F6 /* EGOIST - Departures〜あなたにおくるアイの歌〜.mp3 */,
+				CDFDF45F1D0E4C94007316F6 /* EGOIST - Euterpe.mp3 */,
+				CDFDF4531D0E2F1F007316F6 /* Egoist */,
+				CDFDF4591D0E3183007316F6 /* EGOIST_Album-cover-art-650x645.jpg */,
+				CDFDF42A1D0E2DEC007316F6 /* Assets.xcassets */,
+				CDFDF42C1D0E2DEC007316F6 /* LaunchScreen.storyboard */,
+				CDFDF42F1D0E2DEC007316F6 /* Info.plist */,
+			);
+			path = MediaPlayer;
+			sourceTree = "<group>";
+		};
+		CDFDF4371D0E2DEC007316F6 /* MediaPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				CDFDF4381D0E2DEC007316F6 /* MediaPlayerTests.swift */,
+				CDFDF43A1D0E2DEC007316F6 /* Info.plist */,
+			);
+			path = MediaPlayerTests;
+			sourceTree = "<group>";
+		};
+		CDFDF4421D0E2DEC007316F6 /* MediaPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CDFDF4431D0E2DEC007316F6 /* MediaPlayerUITests.swift */,
+				CDFDF4451D0E2DEC007316F6 /* Info.plist */,
+			);
+			path = MediaPlayerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDFDF41F1D0E2DEC007316F6 /* MediaPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDFDF4481D0E2DEC007316F6 /* Build configuration list for PBXNativeTarget "MediaPlayer" */;
+			buildPhases = (
+				CDFDF41C1D0E2DEC007316F6 /* Sources */,
+				CDFDF41D1D0E2DEC007316F6 /* Frameworks */,
+				CDFDF41E1D0E2DEC007316F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MediaPlayer;
+			productName = MediaPlayer;
+			productReference = CDFDF4201D0E2DEC007316F6 /* MediaPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CDFDF4331D0E2DEC007316F6 /* MediaPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDFDF44B1D0E2DEC007316F6 /* Build configuration list for PBXNativeTarget "MediaPlayerTests" */;
+			buildPhases = (
+				CDFDF4301D0E2DEC007316F6 /* Sources */,
+				CDFDF4311D0E2DEC007316F6 /* Frameworks */,
+				CDFDF4321D0E2DEC007316F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDFDF4361D0E2DEC007316F6 /* PBXTargetDependency */,
+			);
+			name = MediaPlayerTests;
+			productName = MediaPlayerTests;
+			productReference = CDFDF4341D0E2DEC007316F6 /* MediaPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CDFDF43E1D0E2DEC007316F6 /* MediaPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDFDF44E1D0E2DEC007316F6 /* Build configuration list for PBXNativeTarget "MediaPlayerUITests" */;
+			buildPhases = (
+				CDFDF43B1D0E2DEC007316F6 /* Sources */,
+				CDFDF43C1D0E2DEC007316F6 /* Frameworks */,
+				CDFDF43D1D0E2DEC007316F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDFDF4411D0E2DEC007316F6 /* PBXTargetDependency */,
+			);
+			name = MediaPlayerUITests;
+			productName = MediaPlayerUITests;
+			productReference = CDFDF43F1D0E2DEC007316F6 /* MediaPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDFDF4181D0E2DEC007316F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Beta;
+				TargetAttributes = {
+					CDFDF41F1D0E2DEC007316F6 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = CVHGDSY375;
+					};
+					CDFDF4331D0E2DEC007316F6 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = CVHGDSY375;
+						TestTargetID = CDFDF41F1D0E2DEC007316F6;
+					};
+					CDFDF43E1D0E2DEC007316F6 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = CVHGDSY375;
+						TestTargetID = CDFDF41F1D0E2DEC007316F6;
+					};
+				};
+			};
+			buildConfigurationList = CDFDF41B1D0E2DEC007316F6 /* Build configuration list for PBXProject "MediaPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CDFDF4171D0E2DEC007316F6;
+			productRefGroup = CDFDF4211D0E2DEC007316F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDFDF41F1D0E2DEC007316F6 /* MediaPlayer */,
+				CDFDF4331D0E2DEC007316F6 /* MediaPlayerTests */,
+				CDFDF43E1D0E2DEC007316F6 /* MediaPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDFDF41E1D0E2DEC007316F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDFDF4641D0E4C94007316F6 /* EGOIST - Euterpe.mp3 in Resources */,
+				CDFDF42E1D0E2DEC007316F6 /* LaunchScreen.storyboard in Resources */,
+				CDFDF4601D0E4C94007316F6 /* EGOIST - 名前のない怪物.mp3 in Resources */,
+				CDFDF45A1D0E3183007316F6 /* EGOIST_Album-cover-art-650x645.jpg in Resources */,
+				CDFDF4611D0E4C94007316F6 /* EGOIST - 想いを巡らす100の事象.mp3 in Resources */,
+				CDFDF4541D0E2F1F007316F6 /* Egoist in Resources */,
+				CDFDF42B1D0E2DEC007316F6 /* Assets.xcassets in Resources */,
+				CDFDF4631D0E4C94007316F6 /* EGOIST - Departures〜あなたにおくるアイの歌〜.mp3 in Resources */,
+				CDFDF4621D0E4C94007316F6 /* EGOIST - All Alone With You.mp3 in Resources */,
+				CDFDF4291D0E2DEC007316F6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDFDF4321D0E2DEC007316F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDFDF43D1D0E2DEC007316F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDFDF41C1D0E2DEC007316F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDFDF4261D0E2DEC007316F6 /* ViewController.swift in Sources */,
+				CDFDF4561D0E30CF007316F6 /* MediaPlayerViewController.swift in Sources */,
+				CDFDF4241D0E2DEC007316F6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDFDF4301D0E2DEC007316F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDFDF4391D0E2DEC007316F6 /* MediaPlayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDFDF43B1D0E2DEC007316F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDFDF4441D0E2DEC007316F6 /* MediaPlayerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CDFDF4361D0E2DEC007316F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDFDF41F1D0E2DEC007316F6 /* MediaPlayer */;
+			targetProxy = CDFDF4351D0E2DEC007316F6 /* PBXContainerItemProxy */;
+		};
+		CDFDF4411D0E2DEC007316F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDFDF41F1D0E2DEC007316F6 /* MediaPlayer */;
+			targetProxy = CDFDF4401D0E2DEC007316F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CDFDF4271D0E2DEC007316F6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDFDF4281D0E2DEC007316F6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CDFDF42C1D0E2DEC007316F6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDFDF42D1D0E2DEC007316F6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CDFDF4461D0E2DEC007316F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CDFDF4471D0E2DEC007316F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDFDF4491D0E2DEC007316F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MediaPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = beta.moe.MediaPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CDFDF44A1D0E2DEC007316F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MediaPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = beta.moe.MediaPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CDFDF44C1D0E2DEC007316F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MediaPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = beta.moe.MediaPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MediaPlayer.app/MediaPlayer";
+			};
+			name = Debug;
+		};
+		CDFDF44D1D0E2DEC007316F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MediaPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = beta.moe.MediaPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MediaPlayer.app/MediaPlayer";
+			};
+			name = Release;
+		};
+		CDFDF44F1D0E2DEC007316F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MediaPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = beta.moe.MediaPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MediaPlayer;
+			};
+			name = Debug;
+		};
+		CDFDF4501D0E2DEC007316F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MediaPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = beta.moe.MediaPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MediaPlayer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDFDF41B1D0E2DEC007316F6 /* Build configuration list for PBXProject "MediaPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDFDF4461D0E2DEC007316F6 /* Debug */,
+				CDFDF4471D0E2DEC007316F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDFDF4481D0E2DEC007316F6 /* Build configuration list for PBXNativeTarget "MediaPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDFDF4491D0E2DEC007316F6 /* Debug */,
+				CDFDF44A1D0E2DEC007316F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CDFDF44B1D0E2DEC007316F6 /* Build configuration list for PBXNativeTarget "MediaPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDFDF44C1D0E2DEC007316F6 /* Debug */,
+				CDFDF44D1D0E2DEC007316F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CDFDF44E1D0E2DEC007316F6 /* Build configuration list for PBXNativeTarget "MediaPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDFDF44F1D0E2DEC007316F6 /* Debug */,
+				CDFDF4501D0E2DEC007316F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDFDF4181D0E2DEC007316F6 /* Project object */;
+}

@@ -62,17 +62,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="APb-ZX-8ej">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                            </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jo6-5w-k0E">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <items>
-                                    <barButtonItem systemItem="pause" id="NfT-6l-mki">
-                                        <connections>
-                                            <action selector="pauseButton:" destination="R0a-hf-ygy" id="9Lb-Or-Uyt"/>
-                                        </connections>
-                                    </barButtonItem>
+                                    <barButtonItem systemItem="play" id="c2e-xV-XyY"/>
                                     <barButtonItem style="plain" id="C3R-FX-LNE">
                                         <slider key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="305-B4-jd3">
-                                            <rect key="frame" x="41" y="7" width="220" height="31"/>
+                                            <rect key="frame" x="43" y="7" width="220" height="31"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <connections>
                                                 <action selector="sliderController:" destination="R0a-hf-ygy" eventType="valueChanged" id="krx-J8-3oC"/>
@@ -84,24 +83,52 @@
                                             <action selector="stopButton:" destination="R0a-hf-ygy" id="yti-13-5Cx"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem systemItem="play" id="c2e-xV-XyY">
+                                    <barButtonItem systemItem="pause" id="GHt-p1-XpZ">
                                         <connections>
-                                            <action selector="playButton:" destination="R0a-hf-ygy" id="ezN-o8-l41"/>
+                                            <action selector="playButton:" destination="R0a-hf-ygy" id="b1m-Op-65s"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EGOIST_Album-cover-art-650x645.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="APb-ZX-8ej">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
-                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mgW-0x-66z">
+                                <rect key="frame" x="0.0" y="579" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" id="pdy-xz-1Eo">
+                                        <slider key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="Pvu-6Z-5xw">
+                                            <rect key="frame" x="14" y="7" width="341" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <connections>
+                                                <action selector="progressController:" destination="R0a-hf-ygy" eventType="valueChanged" id="BKo-YZ-Tba"/>
+                                            </connections>
+                                        </slider>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPM-sU-Ron">
+                                <rect key="frame" x="307" y="553" width="48" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7T7-Dy-dCs">
+                                <rect key="frame" x="14" y="553" width="61" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="duration" destination="jPM-sU-Ron" id="sS8-a2-a5g"/>
                         <outlet property="imageView" destination="APb-ZX-8ej" id="55k-hX-CVy"/>
+                        <outlet property="playButton" destination="c2e-xV-XyY" id="YKp-0e-gFk"/>
+                        <outlet property="progressBar" destination="Pvu-6Z-5xw" id="vL9-fb-xWh"/>
                         <outlet property="slider" destination="305-B4-jd3" id="pX1-Vb-QbO"/>
+                        <outlet property="startTime" destination="7T7-Dy-dCs" id="Wy3-iX-iFI"/>
+                        <outlet property="toolBar" destination="Jo6-5w-k0E" id="LeP-vM-GNf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="frR-lC-BE6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -129,7 +156,4 @@
             <point key="canvasLocation" x="196" y="464"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="EGOIST_Album-cover-art-650x645.jpg" width="650" height="645"/>
-    </resources>
 </document>

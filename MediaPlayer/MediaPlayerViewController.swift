@@ -12,18 +12,40 @@ import AVFoundation
 class MediaPlayerViewController: UIViewController {
 
     @IBOutlet var imageView: UIImageView!
+    @IBOutlet var playButton: UIBarButtonItem!
+    @IBOutlet weak var toolBar: UIToolbar!
+    @IBOutlet var startTime: UILabel!
+    @IBOutlet var duration: UILabel!
+    
+    var updater : CADisplayLink! = nil
+    
+    var playing = true
     
 //    var player: AVAudioPlayer = AVAudioPlayer()
     var player: AVAudioPlayer?
     
-    @IBAction func pauseButton(sender: UIBarButtonItem) {
-        player!.pause()
-    }
+//    @IBAction func pauseButton(sender: UIBarButtonItem) {
+//        player!.pause()
+//    }
     @IBAction func playButton(sender: UIBarButtonItem) {
-        player!.play()
+        var playBtn = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Play, target: self, action: #selector(MediaPlayerViewController.playButton(_:)))
+        if playing {
+            player!.pause()
+            playing = false
+        } else {
+            player!.play()
+            playBtn = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Pause, target: self, action: #selector(MediaPlayerViewController.playButton(_:)))
+            playing = true
+        }
+        var items = toolBar.items!
+        items[3] = playBtn
+        toolBar.setItems(items, animated: true)
     }
+    
+    
     @IBAction func stopButton(sender: UIBarButtonItem) {
         player!.stop()
+        player!.currentTime = 0;
     }
     
     @IBOutlet var slider: UISlider!
@@ -32,6 +54,14 @@ class MediaPlayerViewController: UIViewController {
         
         player!.volume = slider.value
     }
+    
+    @IBOutlet var progressBar: UISlider!
+    
+    @IBAction func progressController(sender: UISlider) {
+        player!.currentTime = Double(progressBar.value)
+    }
+    
+    
     
 
     override func viewDidLoad() {
@@ -122,12 +152,32 @@ class MediaPlayerViewController: UIViewController {
         do {
             player = try AVAudioPlayer(contentsOfURL: egoisturl!)
             guard let player = player else { return }
-            
+            updater = CADisplayLink(target: self, selector: #selector(MediaPlayerViewController.trackAudio))
+            updater.frameInterval = 1
+            updater.addToRunLoop(NSRunLoop.currentRunLoop(), forMode: NSRunLoopCommonModes)
+            duration.text = "\(formatTime(player.duration))"
+            startTime.text = "\(formatTime(player.currentTime))"
+            progressBar.minimumValue = 0
+            progressBar.maximumValue = Float(player.duration)
             player.prepareToPlay()
             player.play()
         } catch let error as NSError {
             print(error.description)
         }
+    }
+    func trackAudio() {
+//        var normalizedTime = Float(player!.currentTime * 100.0 / player!.duration)
+        progressBar.value = Float(player!.currentTime)
+        startTime.text = "\(formatTime(player!.currentTime))"
+    }
+    
+    func formatTime(time: NSTimeInterval)->String{
+        let current: Int = Int(time)
+        let min = current/60
+        let sec = abs(current)%60
+        let minStr = String(format: "%02d", arguments: [min])
+        let secStr = String(format: "%02d", arguments: [sec])
+        return minStr+":"+secStr
     }
     
 
